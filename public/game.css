@@ -1,0 +1,82 @@
+html {
+  overflow: hidden;
+}
+
+.Opponent {
+  animation: rotation 3s infinite linear;
+  -webkit-animation: rotation 3s infinite linear;
+}
+
+.Boss {
+  animation: rotation 3s infinite linear;
+  -webkit-animation: rotation 3s infinite linear;
+}
+
+.paused .Opponent {
+  animation: none;
+  -webkit-animation: none;
+}
+
+.paused .Boss {
+  animation: none;
+  -webkit-animation: none;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+#btnInstall {
+  width: 100%;
+  border: none;
+  background: cyan;
+  color: blue;
+  padding: 10px 20px;
+  outline: none;
+  font-family: monospace;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.gamebutton {
+  border: none;
+  background: #ddd;
+  color: #333;
+  padding: 10px 20px;
+  outline: none;
+  font-family: monospace;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.listaul {
+  padding: 0px;
+}
+
+.listali {
+  display: inline;
+  border: none;
+  background: greenyellow;
+  color: #333;
+  padding: 10px 20px;
+  margin: 2px;
+  font-family: monospace;
+  text-decoration: none;
+  font-weight: bold;
+  float: left;
+}
+
+#botones {
+  float: left;
+}
+
+#lista {
+  float: right;
+}
